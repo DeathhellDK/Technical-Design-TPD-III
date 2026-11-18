@@ -1,24 +1,19 @@
+
 # Unreal Engine generated files
+Binaries/
 Intermediate/
 Saved/
 DerivedDataCache/
 
 # Generated plugin files
+Plugins/**/Binaries/
 Plugins/**/Intermediate/
-
-# NOTE: Binaries/ (project and Plugins/**/Binaries/) is deliberately NOT ignored.
-# We rely on the committed compiled C++ (.dll) to open the project.
-# Rebuild and recommit Binaries/ whenever C++ code changes.
-
-# Debug symbols: large, and not needed to open the project
-*.pdb
 
 # IDE files
 .vs/
 .idea/
 .vscode/
 *.sln
-*.slnx
 *.suo
 *.VC.db
 *.VC.opendb
@@ -28,9 +23,11 @@ Plugins/**/Intermediate/
 Thumbs.db
 Desktop.ini
 
-# Compiled files (intermediate only; .dll must stay committed, see note above)
+# Compiled files
 *.obj
 *.o
+*.dll
+*.exe
 
 # Unreal cooked build output
 Saved/StagedBuilds/
