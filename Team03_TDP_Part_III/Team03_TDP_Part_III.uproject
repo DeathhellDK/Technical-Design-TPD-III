@@ -4,16 +4,16 @@
 	"Category": "",
 	"Description": "",
 	"Plugins": [
-        {
-            "Name": "ModelingToolsEditorMode",
-            "Enabled": true,
-            "TargetAllowList": [
-                "Editor"
-            ]
-        },
-        {
-            "Name": "MachineFlow",
-            "Enabled": true
-        }
-    ]
+		{
+			"Name": "ModelingToolsEditorMode",
+			"Enabled": true,
+			"TargetAllowList": [
+				"Editor"
+			]
+		},
+		{
+			"Name": "MachineFlow",
+			"Enabled": true
+		}
+	]
 }
