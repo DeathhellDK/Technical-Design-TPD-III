@@ -10,6 +10,17 @@ Plugins/**/Intermediate/
 # We rely on the committed compiled C++ (.dll) to open the project.
 # Rebuild and recommit Binaries/ whenever C++ code changes.
 
+# Standalone game builds (Package Project / Build.bat) also write into Binaries/.
+# Only the editor binaries (UnrealEditor-*.dll, UnrealEditor.modules, *Editor.target) are committed.
+Binaries/Win64/Team03_TDP_Part_III.*
+Binaries/Win64/Team03_TDP_Part_III-Win64-*
+Binaries/Win64/*.exe
+Binaries/Win64/*.lib
+Binaries/Win64/*.exp
+Binaries/Win64/tbb*.dll
+Binaries/Win64/D3D12/
+Binaries/Win64/DML/
+
 # Debug symbols: large, and not needed to open the project
 *.pdb
 
@@ -34,3 +45,4 @@ Desktop.ini
 
 # Unreal cooked build output
 Saved/StagedBuilds/
+Build/*/FileOpenOrder/
